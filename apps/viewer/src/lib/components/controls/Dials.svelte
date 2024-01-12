@@ -2,7 +2,7 @@
   import { renderOptions } from '$lib/shared/stores/render-options.js'
   import { opacity } from '$lib/shared/stores/opacity.js'
 
-  import { Dial } from '@allmaps/ui'
+  import { CustomSlider } from '@allmaps/ui'
 
   let opacityActive = false
   let removeBackgroundActive = false
@@ -17,7 +17,9 @@
 </script>
 
 <div class="inline-flex items-center space-x-1 md:space-x-3">
-  <Dial
+  <CustomSlider label="Opacity"/>
+  <CustomSlider label="Background" />
+  <!-- <Dial
     bind:value={$opacity}
     bind:active={opacityActive}
     enableTooltip={!opacityDisableTooltip}
@@ -32,5 +34,5 @@
     label="Remove background"
     invert
     toggleValue={0.2}
-  />
+  /> -->
 </div>

@@ -21,19 +21,19 @@ importers:
   apps/cli:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../../packages/annotation
       '@allmaps/id':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/id
       '@allmaps/iiif-parser':
-        specifier: ^1.0.0-beta.28
+        specifier: ^1.0.0-beta.29
         version: link:../../packages/iiif-parser
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.17
+        specifier: ^1.0.0-beta.18
         version: link:../../packages/stdlib
       '@allmaps/transform':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/transform
       commander:
         specifier: ^10.0.0
@@ -82,13 +82,13 @@ importers:
   apps/docs:
     dependencies:
       '@allmaps/id':
-        specifier: ^1.0.0-beta.16
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/id
       '@allmaps/tailwind':
         specifier: ^1.0.0-beta.8
         version: link:../../packages/tailwind
       '@allmaps/ui':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/ui
       '@astrojs/starlight':
         specifier: ^0.8.0
@@ -118,7 +118,7 @@ importers:
   apps/explore:
     dependencies:
       '@allmaps/ui':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/ui
       ol:
         specifier: ^8.2.0
@@ -173,25 +173,25 @@ importers:
   apps/here:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../../packages/annotation
       '@allmaps/iiif-parser':
-        specifier: ^1.0.0-beta.28
+        specifier: ^1.0.0-beta.29
         version: link:../../packages/iiif-parser
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.17
+        specifier: ^1.0.0-beta.18
         version: link:../../packages/stdlib
       '@allmaps/tailwind':
         specifier: ^1.0.0-beta.8
         version: link:../../packages/tailwind
       '@allmaps/transform':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/transform
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../../packages/types
       '@allmaps/ui':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/ui
       ol:
         specifier: ^8.2.0
@@ -249,16 +249,16 @@ importers:
   apps/iiif:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../../packages/annotation
       '@allmaps/id':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/id
       '@allmaps/iiif-parser':
-        specifier: ^1.0.0-beta.28
+        specifier: ^1.0.0-beta.29
         version: link:../../packages/iiif-parser
       '@allmaps/ui':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/ui
     devDependencies:
       '@sveltejs/adapter-static':
@@ -316,16 +316,16 @@ importers:
   apps/info:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../../packages/annotation
       '@allmaps/id':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/id
       '@allmaps/iiif-parser':
-        specifier: ^1.0.0-beta.28
+        specifier: ^1.0.0-beta.29
         version: link:../../packages/iiif-parser
       '@allmaps/ui':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/ui
     devDependencies:
       '@sveltejs/adapter-static':
@@ -383,22 +383,22 @@ importers:
   apps/latest:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../../packages/annotation
       '@allmaps/id':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/id
       '@allmaps/tailwind':
         specifier: ^1.0.0-beta.8
         version: link:../../packages/tailwind
       '@allmaps/transform':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/transform
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../../packages/types
       '@allmaps/ui':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/ui
       '@turf/area':
         specifier: ^6.5.0
@@ -468,13 +468,13 @@ importers:
   apps/tiles:
     dependencies:
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.17
+        specifier: ^1.0.0-beta.18
         version: link:../../packages/stdlib
       '@allmaps/tailwind':
         specifier: ^1.0.0-beta.8
         version: link:../../packages/tailwind
       '@allmaps/ui':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/ui
       ol:
         specifier: ^8.2.0
@@ -532,22 +532,22 @@ importers:
   apps/tileserver:
     devDependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../../packages/annotation
       '@allmaps/id':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/id
       '@allmaps/iiif-parser':
-        specifier: ^1.0.0-beta.28
+        specifier: ^1.0.0-beta.29
         version: link:../../packages/iiif-parser
       '@allmaps/render':
-        specifier: ^1.0.0-beta.42
+        specifier: ^1.0.0-beta.43
         version: link:../../packages/render
       '@allmaps/transform':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/transform
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../../packages/types
       '@cloudflare/workers-types':
         specifier: ^3.14.0
@@ -607,34 +607,34 @@ importers:
   apps/viewer:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../../packages/annotation
       '@allmaps/id':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/id
       '@allmaps/iiif-parser':
-        specifier: ^1.0.0-beta.28
+        specifier: ^1.0.0-beta.29
         version: link:../../packages/iiif-parser
       '@allmaps/openlayers':
-        specifier: ^1.0.0-beta.46
+        specifier: ^1.0.0-beta.47
         version: link:../../packages/openlayers
       '@allmaps/render':
-        specifier: ^1.0.0-beta.42
+        specifier: ^1.0.0-beta.43
         version: link:../../packages/render
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.17
+        specifier: ^1.0.0-beta.18
         version: link:../../packages/stdlib
       '@allmaps/tailwind':
         specifier: ^1.0.0-beta.8
         version: link:../../packages/tailwind
       '@allmaps/transform':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/transform
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../../packages/types
       '@allmaps/ui':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../../packages/ui
       comlink:
         specifier: ^4.4.1
@@ -657,7 +657,7 @@ importers:
         version: 1.0.0(@sveltejs/kit@1.5.0)
       '@sveltejs/kit':
         specifier: ^1.5.0
-        version: 1.5.0(svelte@3.55.0)(vite@4.3.0)
+        version: 1.5.0(svelte@3.59.2)(vite@4.3.0)
       '@types/openseadragon':
         specifier: ^3.0.4
         version: 3.0.4
@@ -678,7 +678,7 @@ importers:
         version: 8.5.0(eslint@8.35.0)
       eslint-plugin-svelte:
         specifier: ^2.28.0
-        version: 2.28.0(eslint@8.35.0)(svelte@3.55.0)
+        version: 2.28.0(eslint@8.35.0)(svelte@3.59.2)
       postcss:
         specifier: ^8.4.18
         version: 8.4.18
@@ -687,13 +687,13 @@ importers:
         version: 2.8.0
       prettier-plugin-svelte:
         specifier: ^2.8.1
-        version: 2.8.1(prettier@2.8.0)(svelte@3.55.0)
+        version: 2.8.1(prettier@2.8.0)(svelte@3.59.2)
       svelte:
-        specifier: ^3.55.0
-        version: 3.55.0
+        specifier: ^3.59.1
+        version: 3.59.2
       svelte-check:
         specifier: ^3.0.1
-        version: 3.0.1(postcss@8.4.18)(svelte@3.55.0)
+        version: 3.0.1(postcss@8.4.18)(svelte@3.59.2)
       tailwindcss:
         specifier: ^3.3.3
         version: 3.3.3
@@ -747,7 +747,7 @@ importers:
   packages/id:
     dependencies:
       '@allmaps/types':
-        specifier: ^1.0.0-beta.5
+        specifier: ^1.0.0-beta.7
         version: link:../types
     devDependencies:
       '@types/node':
@@ -781,7 +781,7 @@ importers:
   packages/iiif-parser:
     dependencies:
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../types
       zod:
         specifier: ^3.20.6
@@ -821,19 +821,19 @@ importers:
   packages/leaflet:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../annotation
       '@allmaps/render':
-        specifier: ^1.0.0-beta.42
+        specifier: ^1.0.0-beta.43
         version: link:../render
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.17
+        specifier: ^1.0.0-beta.18
         version: link:../stdlib
       '@allmaps/transform':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../transform
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../types
       leaflet:
         specifier: ^1.9.4
@@ -864,10 +864,10 @@ importers:
   packages/maplibre:
     dependencies:
       '@allmaps/render':
-        specifier: ^1.0.0-beta.35
+        specifier: ^1.0.0-beta.43
         version: link:../render
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.16
+        specifier: ^1.0.0-beta.18
         version: link:../stdlib
       maplibre-gl:
         specifier: ^3.3.1
@@ -901,10 +901,10 @@ importers:
   packages/openlayers:
     dependencies:
       '@allmaps/render':
-        specifier: ^1.0.0-beta.42
+        specifier: ^1.0.0-beta.43
         version: link:../render
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.17
+        specifier: ^1.0.0-beta.18
         version: link:../stdlib
       lodash-es:
         specifier: ^4.17.21
@@ -941,25 +941,25 @@ importers:
   packages/render:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../annotation
       '@allmaps/id':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../id
       '@allmaps/iiif-parser':
-        specifier: ^1.0.0-beta.28
+        specifier: ^1.0.0-beta.29
         version: link:../iiif-parser
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.17
+        specifier: ^1.0.0-beta.18
         version: link:../stdlib
       '@allmaps/transform':
-        specifier: ^1.0.0-beta.20
+        specifier: ^1.0.0-beta.21
         version: link:../transform
       '@allmaps/triangulate':
-        specifier: ^1.0.0-beta.9
+        specifier: ^1.0.0-beta.10
         version: link:../triangulate
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../types
       '@turf/boolean-point-in-polygon':
         specifier: ^6.5.0
@@ -1017,7 +1017,7 @@ importers:
   packages/schemas:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../annotation
       zod:
         specifier: ^3.20.6
@@ -1048,13 +1048,13 @@ importers:
   packages/stdlib:
     dependencies:
       '@allmaps/annotation':
-        specifier: ^1.0.0-beta.19
+        specifier: ^1.0.0-beta.20
         version: link:../annotation
       '@allmaps/iiif-parser':
-        specifier: ^1.0.0-beta.28
+        specifier: ^1.0.0-beta.29
         version: link:../iiif-parser
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../types
       '@placemarkio/geojson-rewind':
         specifier: ^1.0.2
@@ -1118,10 +1118,10 @@ importers:
   packages/transform:
     dependencies:
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.17
+        specifier: ^1.0.0-beta.18
         version: link:../stdlib
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../types
       '@turf/distance':
         specifier: ^6.3.0
@@ -1167,10 +1167,10 @@ importers:
   packages/triangulate:
     dependencies:
       '@allmaps/stdlib':
-        specifier: ^1.0.0-beta.17
+        specifier: ^1.0.0-beta.18
         version: link:../stdlib
       '@allmaps/types':
-        specifier: ^1.0.0-beta.6
+        specifier: ^1.0.0-beta.7
         version: link:../types
       poly2tri:
         specifier: ^1.5.0
@@ -1237,15 +1237,21 @@ importers:
         specifier: ^1.6.4
         version: 1.6.4
     devDependencies:
+      '@melt-ui/pp':
+        specifier: ^0.3.0
+        version: 0.3.0(@melt-ui/svelte@0.69.0)(svelte@3.59.2)
+      '@melt-ui/svelte':
+        specifier: ^0.69.0
+        version: 0.69.0(svelte@3.59.2)
       '@sveltejs/adapter-static':
         specifier: ^2.0.0
         version: 2.0.0(@sveltejs/kit@1.5.0)
       '@sveltejs/kit':
         specifier: ^1.5.0
-        version: 1.5.0(svelte@3.55.0)(vite@4.3.0)
+        version: 1.5.0(svelte@3.59.2)(vite@4.3.0)
       '@sveltejs/package':
         specifier: ^2.0.0
-        version: 2.0.0(svelte@3.55.0)(typescript@5.0.2)
+        version: 2.0.0(svelte@3.59.2)(typescript@5.0.2)
       '@tailwindcss/typography':
         specifier: ^0.5.9
         version: 0.5.9(tailwindcss@3.3.3)
@@ -1263,7 +1269,7 @@ importers:
         version: 8.5.0(eslint@8.35.0)
       eslint-plugin-svelte:
         specifier: ^2.28.0
-        version: 2.28.0(eslint@8.35.0)(svelte@3.55.0)
+        version: 2.28.0(eslint@8.35.0)(svelte@3.59.2)
       postcss:
         specifier: ^8.4.18
         version: 8.4.18
@@ -1272,16 +1278,16 @@ importers:
         version: 2.8.0
       prettier-plugin-svelte:
         specifier: ^2.8.1
-        version: 2.8.1(prettier@2.8.0)(svelte@3.55.0)
+        version: 2.8.1(prettier@2.8.0)(svelte@3.59.2)
       publint:
         specifier: ^0.1.9
         version: 0.1.9
       svelte:
-        specifier: ^3.55.0
-        version: 3.55.0
+        specifier: ^3.59.1
+        version: 3.59.2
       svelte-check:
         specifier: ^3.0.1
-        version: 3.0.1(postcss@8.4.18)(svelte@3.55.0)
+        version: 3.0.1(postcss@8.4.18)(svelte@3.59.2)
       tailwindcss:
         specifier: ^3.3.3
         version: 3.3.3
@@ -2134,11 +2140,28 @@ packages:
     resolution: {integrity: sha512-EvYTiXet5XqweYGClEmpu3BoxmsQ4hkj3QaYA6qEnigCWffTP3vNRwBReTdrwDwo7OoJ3wM8Uoe9Uk4n+d4hfg==}
     dev: false
 
+  /@floating-ui/core@1.5.3:
+    resolution: {integrity: sha512-O0WKDOo0yhJuugCx6trZQj5jVJ9yR0ystG2JaNAemYUWce+pmM6WUEFIibnWyEJKdrDxhm75NoSRME35FNaM/Q==}
+    dependencies:
+      '@floating-ui/utils': 0.2.1
+    dev: true
+
   /@floating-ui/dom@1.2.9:
     resolution: {integrity: sha512-sosQxsqgxMNkV3C+3UqTS6LxP7isRLwX8WMepp843Rb3/b0Wz8+MdUkxJksByip3C2WwLugLHN1b4ibn//zKwQ==}
     dependencies:
       '@floating-ui/core': 1.2.6
     dev: false
+
+  /@floating-ui/dom@1.5.4:
+    resolution: {integrity: sha512-jByEsHIY+eEdCjnTVu+E3ephzTOzkQ8hgUfGwos+bg7NlH33Zc5uO+QHz1mrQUOgIKKDD1RtS201P9NvAfq3XQ==}
+    dependencies:
+      '@floating-ui/core': 1.5.3
+      '@floating-ui/utils': 0.2.1
+    dev: true
+
+  /@floating-ui/utils@0.2.1:
+    resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
+    dev: true
 
   /@gar/promisify@1.1.3:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
@@ -2171,6 +2194,12 @@ packages:
 
   /@iarna/toml@2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
+
+  /@internationalized/date@3.5.1:
+    resolution: {integrity: sha512-LUQIfwU9e+Fmutc/DpRTGXSdgYZLBegi4wygCWDSVmUdLTaMHsQyASDiJtREwanwKuQLq0hY76fCJ9J/9I2xOQ==}
+    dependencies:
+      '@swc/helpers': 0.5.3
     dev: true
 
   /@isaacs/cliui@8.0.2:
@@ -2379,6 +2408,33 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /@melt-ui/pp@0.3.0(@melt-ui/svelte@0.69.0)(svelte@3.59.2):
+    resolution: {integrity: sha512-b07Bdh8l2KcwKVCXOY+SoBw1dk9eWvQfMSi6SoacpRVyVmmfpi0kV4oGt3HYF0tUCB3sEmVicxse50ZzZxEzEA==}
+    engines: {pnpm: '>=8.6.3'}
+    peerDependencies:
+      '@melt-ui/svelte': '>= 0.29.0'
+      svelte: ^3.55.0 || ^4.0.0 || ^5.0.0-next.1
+    dependencies:
+      '@melt-ui/svelte': 0.69.0(svelte@3.59.2)
+      estree-walker: 3.0.3
+      magic-string: 0.30.5
+      svelte: 3.59.2
+    dev: true
+
+  /@melt-ui/svelte@0.69.0(svelte@3.59.2):
+    resolution: {integrity: sha512-I8Dkq5KH7zw08m/MHqP+CNUMfcXLqMwaBp/ePpgnseMuuFY+9t3zLQEGTT48kGWDLsWXaCseyfApQCookPzVFg==}
+    peerDependencies:
+      svelte: '>=3 <5'
+    dependencies:
+      '@floating-ui/core': 1.5.3
+      '@floating-ui/dom': 1.5.4
+      '@internationalized/date': 3.5.1
+      dequal: 2.0.3
+      focus-trap: 7.5.4
+      nanoid: 5.0.4
+      svelte: 3.59.2
+    dev: true
 
   /@miniflare/cache@2.11.0:
     resolution: {integrity: sha512-L/kc9AzidPwFuk2fwHpAEePi0kNBk6FWUq3ln+9beRCDrPEpfVrDRFpNleF1NFZz5//oeVMuo8F0IVUQGzR7+Q==}
@@ -3214,7 +3270,7 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.5.0(svelte@3.55.0)(vite@4.3.0)
+      '@sveltejs/kit': 1.5.0(svelte@3.59.2)(vite@4.3.0)
     dev: true
 
   /@sveltejs/kit@1.5.0(svelte@3.55.0)(vite@4.3.0):
@@ -3245,7 +3301,35 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/package@2.0.0(svelte@3.55.0)(typescript@5.0.2):
+  /@sveltejs/kit@1.5.0(svelte@3.59.2)(vite@4.3.0):
+    resolution: {integrity: sha512-AkWgCO9i2djZjTqCgIQJ5XfnSzRINowh2w2Gk9wDRuTwxKizSuYe3jNvds/HCDDGHo8XE5E0yWNC9j2XxbrX+g==}
+    engines: {node: ^16.14 || >=18}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      svelte: ^3.54.0
+      vite: ^4.0.0
+    dependencies:
+      '@sveltejs/vite-plugin-svelte': 2.2.0(svelte@3.59.2)(vite@4.3.0)
+      '@types/cookie': 0.5.1
+      cookie: 0.5.0
+      devalue: 4.3.0
+      esm-env: 1.0.0
+      kleur: 4.1.5
+      magic-string: 0.27.0
+      mime: 3.0.0
+      sade: 1.8.1
+      set-cookie-parser: 2.6.0
+      sirv: 2.0.3
+      svelte: 3.59.2
+      tiny-glob: 0.2.9
+      undici: 5.18.0
+      vite: 4.3.0(@types/node@18.14.2)
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@sveltejs/package@2.0.0(svelte@3.59.2)(typescript@5.0.2):
     resolution: {integrity: sha512-sANz/dJibOHOe83hl8pFWUSypqefdYwPp6SUr0SmJxTNQFB5dDECEqwAwoy28DWCQFYl7DU+C1hKkTXyuKOdug==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
@@ -3255,8 +3339,8 @@ packages:
       chokidar: 3.5.3
       kleur: 4.1.5
       sade: 1.8.1
-      svelte: 3.55.0
-      svelte2tsx: 0.6.14(svelte@3.55.0)(typescript@5.0.2)
+      svelte: 3.59.2
+      svelte2tsx: 0.6.14(svelte@3.59.2)(typescript@5.0.2)
     transitivePeerDependencies:
       - typescript
     dev: true
@@ -3296,6 +3380,25 @@ packages:
       - supports-color
     dev: true
 
+  /@sveltejs/vite-plugin-svelte@2.2.0(svelte@3.59.2)(vite@4.3.0):
+    resolution: {integrity: sha512-KDtdva+FZrZlyug15KlbXuubntAPKcBau0K7QhAIqC5SAy0uDbjZwoexDRx0L0J2T4niEfC6FnA9GuQQJKg+Aw==}
+    engines: {node: ^14.18.0 || >= 16}
+    peerDependencies:
+      svelte: ^3.54.0
+      vite: ^4.0.0
+    dependencies:
+      debug: 4.3.4
+      deepmerge: 4.3.1
+      kleur: 4.1.5
+      magic-string: 0.30.0
+      svelte: 3.59.2
+      svelte-hmr: 0.15.1(svelte@3.59.2)
+      vite: 4.3.0(@types/node@18.14.2)
+      vitefu: 0.2.4(vite@4.3.0)
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@sveltejs/vite-plugin-svelte@2.4.5(svelte@4.1.1)(vite@4.5.1):
     resolution: {integrity: sha512-UJKsFNwhzCVuiZd06jM/psscyNJNDwjQC+qIeb7GBJK9iWeQCcIyfcPWDvbCudfcJggY9jtxJeeaZH7uny93FQ==}
     engines: {node: ^14.18.0 || >= 16}
@@ -3315,6 +3418,12 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /@swc/helpers@0.5.3:
+    resolution: {integrity: sha512-FaruWX6KdudYloq1AHD/4nU+UsMTdNE8CKyrseXWEcgjDAbvkwJg2QGPAnfIJLIWsjZOSPLOAykK6fuYp4vp4A==}
+    dependencies:
+      tslib: 2.6.2
+    dev: true
 
   /@tailwindcss/typography@0.5.9(tailwindcss@3.3.3):
     resolution: {integrity: sha512-t8Sg3DyynFysV9f4JDOVISGsjazNb48AeIYQwcL+Bsq5uf4RYL75C1giZ43KISjeDGBaTN3Kxh7Xj/vRSMJUUg==}
@@ -3519,7 +3628,6 @@ packages:
 
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
-    dev: false
 
   /@types/extend@3.0.1:
     resolution: {integrity: sha512-R1g/VyKFFI2HLC1QGAeTtCBWCo6n75l41OnsVYNbmKG+kempOESaodf6BeJyUM3Q0rKa/NQcTHbB2+66lNnxLw==}
@@ -5552,6 +5660,32 @@ packages:
       - ts-node
     dev: true
 
+  /eslint-plugin-svelte@2.28.0(eslint@8.35.0)(svelte@3.59.2):
+    resolution: {integrity: sha512-bXPXKnjq5uKoVAQtC2E0L1Vp+mmJ3nlC9jyz8zwfZ99pQROL2h7Hes01QdYil1vxgh6tLXl5YVpZ2wwyAbBz5g==}
+    engines: {node: ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^7.0.0 || ^8.0.0-0
+      svelte: ^3.37.0
+    peerDependenciesMeta:
+      svelte:
+        optional: true
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.35.0)
+      '@jridgewell/sourcemap-codec': 1.4.15
+      debug: 4.3.4
+      eslint: 8.35.0
+      esutils: 2.0.3
+      known-css-properties: 0.27.0
+      postcss: 8.4.23
+      postcss-load-config: 3.1.4(postcss@8.4.23)
+      postcss-safe-parser: 6.0.0(postcss@8.4.23)
+      svelte: 3.59.2
+      svelte-eslint-parser: 0.28.0(svelte@3.59.2)
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+    dev: true
+
   /eslint-scope@5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -5726,7 +5860,6 @@ packages:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
     dependencies:
       '@types/estree': 1.0.1
-    dev: false
 
   /esutils@2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
@@ -5975,6 +6108,12 @@ packages:
       '@popperjs/core': 2.11.7
       mini-svg-data-uri: 1.4.4
     dev: false
+
+  /focus-trap@7.5.4:
+    resolution: {integrity: sha512-N7kHdlgsO/v+iD/dMoJKtsSqs5Dz/dXZVebRgJw23LDk+jMi/974zyiOYDziY2JPp8xivq9BmUGwIJMiuSBi7w==}
+    dependencies:
+      tabbable: 6.2.0
+    dev: true
 
   /follow-redirects@1.15.4:
     resolution: {integrity: sha512-Cr4D/5wlrb0z9dgERpUL3LrmPKVDsETIJhaCMeDfuFYcqa5bldGV6wBsAN6X/vxlXQtFBMrXdXxdL8CbDTGniw==}
@@ -7482,7 +7621,6 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
-    optional: true
 
   /make-dir@2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==}
@@ -8564,6 +8702,12 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     requiresBuild: true
+
+  /nanoid@5.0.4:
+    resolution: {integrity: sha512-vAjmBf13gsmhXSgBrtIclinISzFFy22WwCYoyilZlsrRXNIHSwgFQ1bEdjRwMT3aoadeIF6HMuDRlOxzfXV8ig==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    dev: true
 
   /napi-build-utils@1.0.2:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}
@@ -9686,6 +9830,16 @@ packages:
     dependencies:
       prettier: 2.8.0
       svelte: 3.55.0
+    dev: true
+
+  /prettier-plugin-svelte@2.8.1(prettier@2.8.0)(svelte@3.59.2):
+    resolution: {integrity: sha512-KA3K1J3/wKDnCxW7ZDRA/QL2Q67N7Xs3gOERqJ5X1qFjq1DdnN3K1R29scSKwh+kA8FF67pXbYytUpvN/i3iQw==}
+    peerDependencies:
+      prettier: ^1.16.4 || ^2.0.0
+      svelte: ^3.2.0
+    dependencies:
+      prettier: 2.8.0
+      svelte: 3.59.2
     dev: true
 
   /prettier@2.8.0:
@@ -10936,6 +11090,33 @@ packages:
       - sugarss
     dev: true
 
+  /svelte-check@3.0.1(postcss@8.4.18)(svelte@3.59.2):
+    resolution: {integrity: sha512-7YpHYWv6V2qhcvVeAlXixUPAlpLCXB1nZEQK0EItB3PtuYmENhKclbc5uKSJTodTwWR1y+4stKGcbH30k6A3Yw==}
+    hasBin: true
+    peerDependencies:
+      svelte: ^3.55.0
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.18
+      chokidar: 3.5.3
+      fast-glob: 3.2.12
+      import-fresh: 3.3.0
+      picocolors: 1.0.0
+      sade: 1.8.1
+      svelte: 3.59.2
+      svelte-preprocess: 5.0.3(postcss@8.4.18)(svelte@3.59.2)(typescript@4.9.5)
+      typescript: 4.9.5
+    transitivePeerDependencies:
+      - '@babel/core'
+      - coffeescript
+      - less
+      - postcss
+      - postcss-load-config
+      - pug
+      - sass
+      - stylus
+      - sugarss
+    dev: true
+
   /svelte-check@3.0.1(postcss@8.4.28)(svelte@3.55.0):
     resolution: {integrity: sha512-7YpHYWv6V2qhcvVeAlXixUPAlpLCXB1nZEQK0EItB3PtuYmENhKclbc5uKSJTodTwWR1y+4stKGcbH30k6A3Yw==}
     hasBin: true
@@ -10978,6 +11159,21 @@ packages:
       svelte: 3.55.0
     dev: true
 
+  /svelte-eslint-parser@0.28.0(svelte@3.59.2):
+    resolution: {integrity: sha512-qWg5M3CIp7LkcdG5bpn44QEd48UxvgxG5L+Sbl701EG8Wujht7EqJuJhqgzvO3bbI9ENbWCXK49eCcwiNnpMzw==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      svelte: ^3.37.0
+    peerDependenciesMeta:
+      svelte:
+        optional: true
+    dependencies:
+      eslint-scope: 7.2.0
+      eslint-visitor-keys: 3.4.1
+      espree: 9.5.2
+      svelte: 3.59.2
+    dev: true
+
   /svelte-floating-ui@1.5.2:
     resolution: {integrity: sha512-nV50eno74CEsFfFJ6iyN/oNYDEOck1TZjGV3lmJksVRbiiUAVF6bHspyAhR7GZ7c/4qbRWp9UyX24J+UXdEpag==}
     dependencies:
@@ -10992,6 +11188,15 @@ packages:
       svelte: '>=3.19.0'
     dependencies:
       svelte: 3.55.0
+    dev: true
+
+  /svelte-hmr@0.15.1(svelte@3.59.2):
+    resolution: {integrity: sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==}
+    engines: {node: ^12.20 || ^14.13.1 || >= 16}
+    peerDependencies:
+      svelte: '>=3.19.0'
+    dependencies:
+      svelte: 3.59.2
     dev: true
 
   /svelte-hmr@0.15.3(svelte@4.1.1):
@@ -11051,6 +11256,54 @@ packages:
       typescript: 4.9.5
     dev: true
 
+  /svelte-preprocess@5.0.3(postcss@8.4.18)(svelte@3.59.2)(typescript@4.9.5):
+    resolution: {integrity: sha512-GrHF1rusdJVbOZOwgPWtpqmaexkydznKzy5qIC2FabgpFyKN57bjMUUUqPRfbBXK5igiEWn1uO/DXsa2vJ5VHA==}
+    engines: {node: '>= 14.10.0'}
+    requiresBuild: true
+    peerDependencies:
+      '@babel/core': ^7.10.2
+      coffeescript: ^2.5.1
+      less: ^3.11.3 || ^4.0.0
+      postcss: ^7 || ^8
+      postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0
+      pug: ^3.0.0
+      sass: ^1.26.8
+      stylus: ^0.55.0
+      sugarss: ^2.0.0 || ^3.0.0 || ^4.0.0
+      svelte: ^3.23.0
+      typescript: '>=3.9.5 || ^4.0.0 || ^5.0.0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      coffeescript:
+        optional: true
+      less:
+        optional: true
+      postcss:
+        optional: true
+      postcss-load-config:
+        optional: true
+      pug:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@types/pug': 2.0.6
+      detect-indent: 6.1.0
+      magic-string: 0.27.0
+      postcss: 8.4.18
+      sorcery: 0.11.0
+      strip-indent: 3.0.0
+      svelte: 3.59.2
+      typescript: 4.9.5
+    dev: true
+
   /svelte-preprocess@5.0.3(postcss@8.4.28)(svelte@3.55.0)(typescript@4.9.5):
     resolution: {integrity: sha512-GrHF1rusdJVbOZOwgPWtpqmaexkydznKzy5qIC2FabgpFyKN57bjMUUUqPRfbBXK5igiEWn1uO/DXsa2vJ5VHA==}
     engines: {node: '>= 14.10.0'}
@@ -11099,7 +11352,7 @@ packages:
       typescript: 4.9.5
     dev: true
 
-  /svelte2tsx@0.6.14(svelte@3.55.0)(typescript@5.0.2):
+  /svelte2tsx@0.6.14(svelte@3.59.2)(typescript@5.0.2):
     resolution: {integrity: sha512-Sxo9gtpc3dYWuFQ8fruZG+M+I6OZMIvOxxKjt48Lr8jD6Kr9cNf1Hf/yHUDEgDwQdRbAzn5y0FL9xk8Dx5v9lg==}
     peerDependencies:
       svelte: ^3.55
@@ -11107,7 +11360,7 @@ packages:
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
-      svelte: 3.55.0
+      svelte: 3.59.2
       typescript: 5.0.2
     dev: true
 
@@ -11125,6 +11378,11 @@ packages:
 
   /svelte@3.55.0:
     resolution: {integrity: sha512-uGu2FVMlOuey4JoKHKrpZFkoYyj0VLjJdz47zX5+gVK5odxHM40RVhar9/iK2YFRVxvfg9FkhfVlR0sjeIrOiA==}
+    engines: {node: '>= 8'}
+    dev: true
+
+  /svelte@3.59.2:
+    resolution: {integrity: sha512-vzSyuGr3eEoAtT/A6bmajosJZIUWySzY2CzB3w2pgPvnkUjGqlDnsNnA0PMO+mMAhuyMul6C2uuZzY6ELSkzyA==}
     engines: {node: '>= 8'}
     dev: true
 
@@ -11158,6 +11416,10 @@ packages:
       '@pkgr/utils': 2.4.2
       tslib: 2.6.2
     dev: false
+
+  /tabbable@6.2.0:
+    resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
+    dev: true
 
   /tailwindcss@3.3.3:
     resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
