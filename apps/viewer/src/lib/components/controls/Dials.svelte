@@ -17,7 +17,7 @@
 </script>
 
 <div class="inline-flex items-center space-x-1 md:space-x-3">
-  <CustomSlider label="Opacity"/>
+  <CustomSlider label="Opacity" bind:evalue={$opacity} />
   <CustomSlider label="Background" />
   <!-- <Dial
     bind:value={$opacity}

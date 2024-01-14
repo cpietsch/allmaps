@@ -1,55 +1,74 @@
 <script lang="ts">
-  import { createSlider, melt } from '@melt-ui/svelte';
+  import { melt, createSlider, type CreateSliderProps } from '@melt-ui/svelte'
   import { last } from '@melt-ui/svelte/internal/helpers'
 
   export let label: string | undefined = undefined
- 
+  export let evalue: number = 0
+
+  const onValueChange: CreateSliderProps['onValueChange'] = ({
+    curr,
+    next
+  }) => {
+    if (Math.abs(curr[0] - next[0]) < 10) {
+      return curr
+    }
+    return next
+  }
+
   const {
     elements: { root, range, thumb },
-    states: { value },
+    states: { value }
   } = createSlider({
-    defaultValue: [30],
+    defaultValue: [evalue * 100],
     min: 0,
     max: 100,
-    step: 1,
-  });
+    step: 1
+    // onValueChange
+  })
 
   let lastValue = $value
   let hover = false
 
-//   $: lastValue = $value
+  $: {
+    evalue = $value[0] / 100
+  }
 
-//   $: console.log("lastValue",lastValue)
-
+  // $: lastValue = $value
+  // $: console.log("lastValue",lastValue)
 </script>
- 
-<span use:melt={$root} class="relative flex h-[20px] w-[100px] items-center" 
-    on:mouseenter={(e) => {
-        hover = true
-    }}
-    on:mouseleave={(e) => {
-        hover = false
-    }}
-    >
-<span class="absolute w-full top-[-2em] text-center text-xs" class:opacity-0={!hover}>
+
+<span
+  class="relative flex flex-col items-center p-4 rounded-md shadow-sm"
+  class:bg-white={hover}
+  on:mouseenter={(e) => {
+    hover = true
+  }}
+  on:mouseleave={(e) => {
+    hover = false
+  }}
+>
+  <span class="w-full text-xs mb-1 text-center" class:opacity-0={!hover}>
     {label}
-</span>
-  <span class="h-[3px] w-full bg-black/40" class:opacity-0={!hover}>
-    <span use:melt={$range} class="h-[3px] bg-white" />
   </span>
-  <span
-    use:melt={$thumb()}
-    on:click={(e) => {
-        // on:m-click ist not working
-        // https://melt-ui.com/docs/controlled
-        e.preventDefault()
-        // console.log('click', $value, lastValue)
-        if(lastValue[0] === $value[0]) {
-            value.set([0])
-        }
+  <span class="relative flex h-[30px] w-[100px] items-center" use:melt={$root}>
+    <span class="h-[3px] w-full bg-black/20" class:opacity-0={!hover}>
+      <span use:melt={$range} class="h-[3px] bg-gray" />
+    </span>
+    <span
+      use:melt={$thumb()}
+      on:pointerdown={(e) => {
         lastValue = $value
-    }}
-       
-    class="h-6 w-6 rounded-full bg-white shadow-sm cursor-pointer border border-black/50 border-width-[2px]"
-  />
+        // console.log('pointerdown', lastValue, $value)
+      }}
+      on:pointerup={(e) => {
+        // console.log('pointerup', lastValue, $value)
+        if (Math.abs(lastValue[0] - $value[0]) < 10) {
+          value.set([0])
+          lastValue = [0]
+        }
+      }}
+      class="flex justify-center items-center text-xs h-6 w-6 rounded-full bg-white shadow-sm cursor-pointer border border-black/50 border-width-[2px]"
+      >{label?.slice(0, 1)}</span
+    >
+  </span>
 </span>
