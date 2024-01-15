@@ -17,8 +17,12 @@
 </script>
 
 <div class="inline-flex items-center space-x-1 md:space-x-3">
-  <CustomSlider label="Opacity" bind:evalue={$opacity} />
-  <CustomSlider label="Background" />
+  <CustomSlider label="Opacity" bind:evalue={$opacity} toggleValue={0} />
+  <CustomSlider
+    label="Background"
+    bind:evalue={$renderOptions.removeBackground.threshold}
+    toggleValue={0.2}
+  />
   <!-- <Dial
     bind:value={$opacity}
     bind:active={opacityActive}

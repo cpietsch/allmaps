@@ -36,7 +36,7 @@
 
 <span
   use:melt={$root}
-  class="relative flex h-[100px] w-[3px] flex-col items-center"
+  class="relative flex h-[100px] w-[3px] flex-col items-center mr-3"
   on:mouseenter={(e) => {
     hover = true
   }}

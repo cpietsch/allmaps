@@ -4,6 +4,7 @@
 
   export let label: string | undefined = undefined
   export let evalue: number = 0
+  export let toggleValue: number = 0
 
   const onValueChange: CreateSliderProps['onValueChange'] = ({
     curr,
@@ -63,8 +64,8 @@
       on:pointerup={(e) => {
         // console.log('pointerup', lastValue, $value)
         if (Math.abs(lastValue[0] - $value[0]) < 10) {
-          value.set([0])
-          lastValue = [0]
+          value.set([toggleValue * 100])
+          lastValue = [toggleValue * 100]
         }
       }}
       class="flex justify-center items-center text-xs h-6 w-6 rounded-full bg-white shadow-sm cursor-pointer border border-black/50 border-width-[2px]"

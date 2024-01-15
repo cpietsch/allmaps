@@ -9,6 +9,7 @@ import URLType from '$lib/components/URLType.svelte'
 import Loading from '$lib/components/Loading.svelte'
 import Dial from '$lib/components/Dial.svelte'
 import CustomSlider from '$lib/components/CustomSlider.svelte'
+import CustomSliderVertical from '$lib/components/CustomSliderVertical.svelte'
 import Copy from '$lib/components/Copy.svelte'
 import MapMonster from '$lib/components/MapMonster.svelte'
 
@@ -36,6 +37,7 @@ export {
   Loading,
   Dial,
   CustomSlider,
+  CustomSliderVertical,
   Copy,
   MapMonster,
 
