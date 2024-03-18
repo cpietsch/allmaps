@@ -13,8 +13,9 @@ export default defineConfig({
     port: ports.viewer
   },
   plugins: [
-    sveltekit()
+    sveltekit(),
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore: Unreachable code error
-    // basicSsl()
+    basicSsl()
   ]
 })
