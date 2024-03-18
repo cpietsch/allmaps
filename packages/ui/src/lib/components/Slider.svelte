@@ -68,7 +68,11 @@
   const wheel = (event: WheelEvent) => {
     event.preventDefault()
     event.stopPropagation()
-    const delta = event.deltaY / 100
+    const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1
+    let delta = event.deltaY / 100
+    if (isFirefox) {
+      delta = event.deltaY > 0 ? 0.05 : -0.05
+    }
     internalValue = clampValue(internalValue - delta)
   }
 
@@ -153,6 +157,12 @@
     writing-mode: vertical-lr;
   }
 
+  @supports (-moz-appearance:none) {
+    .slider {
+      transform: rotate(180deg);
+    }
+  }
+
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -169,5 +179,23 @@
     background: transparent;
     cursor: ns-resize;
     border-radius: 0;
+  }
+
+  .slider::-moz-range-track {
+    background: transparent;
+  }
+
+  .slider::-moz-range-progress {
+    background: transparent;
+  }
+
+  .slider::-moz-focus-outer {
+    border: 0;
+  }
+
+  .slider::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
   }
 </style>
