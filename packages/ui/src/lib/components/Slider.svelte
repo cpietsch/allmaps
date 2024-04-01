@@ -29,7 +29,7 @@
     }
   }
 
-  const enter = (event: MouseEvent | TouchEvent) => {
+  const enter = () => {
     hover = true
   }
   const exit = () => {

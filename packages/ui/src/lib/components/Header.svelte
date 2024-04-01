@@ -2,7 +2,7 @@
   import logo from '$lib/shared/images/allmaps-logo.svg'
 
   export let appName: string
-  export let transparent: boolean = false
+  export let transparent: boolean
 </script>
 
 
