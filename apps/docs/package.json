@@ -31,6 +31,7 @@
     "start": "astro dev",
     "prebuild": "pnpm run copy-readmes",
     "build": "astro check && astro build",
+    "build:dev": "astro check && astro build",
     "lerna-build": "lerna run build --scope @allmaps/docs --include-dependencies",
     "preview": "astro preview",
     "astro": "astro",

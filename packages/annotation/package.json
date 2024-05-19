@@ -37,6 +37,7 @@
   "scripts": {
     "watch": "tsc --watch",
     "build": "tsc && pnpm run documentation",
+    "build:dev": "tsc && pnpm run documentation",
     "preversion": "pnpm run types && pnpm run lint && pnpm test",
     "test": "NODE_ENV=test mocha && pnpm run examples",
     "pretest": "pnpm run build",
