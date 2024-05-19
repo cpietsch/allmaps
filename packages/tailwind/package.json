@@ -36,6 +36,7 @@
   "scripts": {
     "watch": "tsc --watch",
     "build": "tsc",
+    "build:dev": "tsc",
     "lint": "prettier --check src test && eslint src test --ext .js,.ts",
     "types": "tsc --noEmit",
     "format": "prettier --write src test",

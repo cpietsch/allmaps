@@ -34,6 +34,7 @@
   "scripts": {
     "watch": "tsc --watch",
     "build": "tsc",
+    "build:dev": "tsc",
     "preversion": "pnpm run types && pnpm run lint && pnpm test",
     "lint": "prettier --check src test && eslint src test --ext .js,.ts",
     "format": "prettier --write src test",
