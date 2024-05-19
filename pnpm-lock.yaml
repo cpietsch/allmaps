@@ -660,6 +660,9 @@ importers:
       '@allmaps/ui':
         specifier: ^1.0.0-beta.27
         version: link:../../packages/ui
+      '@rich_harris/svelte-split-pane':
+        specifier: ^1.1.1
+        version: 1.1.1(svelte@3.55.0)
       comlink:
         specifier: ^4.4.1
         version: 4.4.1
@@ -3703,6 +3706,14 @@ packages:
 
   /@popperjs/core@2.11.7:
     resolution: {integrity: sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==}
+    dev: false
+
+  /@rich_harris/svelte-split-pane@1.1.1(svelte@3.55.0):
+    resolution: {integrity: sha512-y2RRLyrN6DCeIgwA423aAIv/T5JqQeOl2XogBQ/21DvA2IF7oyrLUtXMxmQL2va2NFdeJO6MDx6nDX5X7kau7A==}
+    peerDependencies:
+      svelte: ^3.54.0
+    dependencies:
+      svelte: 3.55.0
     dev: false
 
   /@rollup/rollup-android-arm-eabi@4.9.5:
@@ -12769,7 +12780,6 @@ packages:
   /svelte@3.55.0:
     resolution: {integrity: sha512-uGu2FVMlOuey4JoKHKrpZFkoYyj0VLjJdz47zX5+gVK5odxHM40RVhar9/iK2YFRVxvfg9FkhfVlR0sjeIrOiA==}
     engines: {node: '>= 8'}
-    dev: true
 
   /svelte@4.1.1:
     resolution: {integrity: sha512-Enick5fPFISLoVy0MFK45cG+YlQt6upw8skEK9zzTpJnH1DqEv8xOZwizCGSo3Q6HZ7KrZTM0J18poF7aQg5zw==}
