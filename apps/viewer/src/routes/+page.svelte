@@ -71,7 +71,7 @@
   }
 
   async function handleSubmit() {
-    if (urlInputValue.trim()) {
+    if (urlInputValue && urlInputValue.trim()) {
       urlInput.submit()
     } else {
       dataStore.set(annotationString)

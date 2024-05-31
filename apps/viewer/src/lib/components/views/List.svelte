@@ -4,12 +4,21 @@
   import { urlStore, Copy } from '@allmaps/ui'
   // import { selectedMaps } from '$lib/shared/stores/selected.js'
   import { sourcesById } from '$lib/shared/stores/sources.js'
-  console.log('mapsBySourceId', $mapsBySourceId)
-  console.log($sourcesById)
+  import { addUrlSource } from '$lib/shared/stores/sources.js'
 
-  function getUrlbyId(id: string) {
+  const getUrlbyId = (id: string) => {
     return $sourcesById?.get(id)?.url || ''
   }
+
+  const addAnnotation = async () => {
+    // check if newAnnotation is an URL
+    if (!newAnnotation.startsWith('http')) return
+    // add annotation to the map
+    await addUrlSource(newAnnotation)
+    // clear newAnnotation
+    newAnnotation = ''
+  }
+  let newAnnotation = ''
 </script>
 
 <section class="w-full h-full overflow-y-auto">
@@ -18,13 +27,14 @@
       <h2 class="text-xl font-medium">Annotations</h2>
     </div>
     <div class="relative w-full flex flex-row mb-4">
-      <div
+      <input
         class="p-4 grow text-gray-900 bg-gray-50 rounded-l-lg border-gray-100 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-ellipsis"
-      >
-        Add a Annotation
-      </div>
+        placeholder="Add a Annotation"
+        bind:value={newAnnotation}
+      />
       <button
         class="top-0 right-0 p-1 w-8 text-sm font-medium text-white rounded-r-lg border-gray-100 border-2 focus:ring-4 focus:outline-none focus:ring-blue-300"
+        on:click={addAnnotation}
       >
         <svg
           class="w-full h-full"

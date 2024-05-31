@@ -21,13 +21,14 @@
     const newUrl = urlFromUrl()
     const newData = dataFromUrl()
 
-    if (newUrl) {
-      console.log('after navigate', newUrl)
+    if (newUrl.length) {
+      console.log('after navigate newUrl', newUrl)
       $param = {
         type: 'url',
         url: newUrl
       }
     } else if (newData) {
+      console.log('after navigate newData', newData)
       $param = {
         type: 'data',
         data: newData
@@ -50,10 +51,22 @@
 
       if ($param.type === 'url' && $param.url) {
         const searchParams = $page.url.searchParams
+        console.log('param subscribe', searchParams.toString(), $param.url)
+
         if (searchParams.has('data')) {
           searchParams.delete('data')
         } else return
+        // this will go into a endless loop
+        // use proper router or fix
+
+        // old
         //searchParams.set('url', $param.url)
+
+        // new
+        // for (let url of $param.url) {
+        //   searchParams.set('url', url)
+        // }
+        // console.log('param subscribe', searchParams.toString())
         gotoSearchParams(searchParams)
       } else if ($param.type === 'data' && $param.data) {
         if ($param.data.length > MAX_URL_PARAM_LENGTH) {
