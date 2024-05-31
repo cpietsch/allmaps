@@ -1,8 +1,15 @@
 <script lang="ts">
-  import { maps } from '$lib/shared/stores/maps.js'
+  import { maps, mapsById, mapsBySourceId } from '$lib/shared/stores/maps.js'
   import MapsItem from '$lib/components/dropdowns/MapsItem.svelte'
   import { urlStore, Copy } from '@allmaps/ui'
   // import { selectedMaps } from '$lib/shared/stores/selected.js'
+  import { sourcesById } from '$lib/shared/stores/sources.js'
+  console.log('mapsBySourceId', $mapsBySourceId)
+  console.log($sourcesById)
+
+  function getUrlbyId(id: string) {
+    return $sourcesById?.get(id)?.url || ''
+  }
 </script>
 
 <section class="w-full h-full overflow-y-auto">
@@ -38,14 +45,19 @@
       </button>
     </div>
 
-    <Copy string={$urlStore} big />
-    <ol class="flex flex-col">
-      {#each $maps as viewerMap}
-        <li class="flex flex-row">
-          <MapsItem {viewerMap} />
-        </li>
-      {/each}
-    </ol>
+    {#each Object.entries($mapsBySourceId) as [sourceId, maps]}
+      <div class="mb-5">
+        <Copy string={getUrlbyId(sourceId)} big />
+
+        <ol class="grid grid-cols-2 gap-4 m-2">
+          {#each maps as viewerMap, i}
+            <li class="flex">
+              <MapsItem {viewerMap} isLastInList={i === maps.length - 1} />
+            </li>
+          {/each}
+        </ol>
+      </div>
+    {/each}
 
     <div class="flex flex-row items-center justify-between mb-5">
       <h2 class="text-xl font-medium">Export</h2>
@@ -77,6 +89,7 @@
         </svg>
       </button>
     </div>
+
     <!-- selected maps list selectedMaps -->
     <!-- <ol class="flex flex-col">
       {#each $selectedMaps as viewerMap}

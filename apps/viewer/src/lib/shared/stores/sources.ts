@@ -34,6 +34,7 @@ async function addSource(
   options: UrlSourceOptions | StringSourceOptions
 ) {
   sourceLoading.set(true)
+  console.log('addSource', id)
 
   let annotations: unknown[] = []
 

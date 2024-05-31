@@ -1,12 +1,12 @@
 import { writable } from 'svelte/store'
 
-function getUrlFromQueryString(location: Location): string | null {
+function getUrlsFromQueryString(location: Location): Array<string> | null {
   const searchParams = new URLSearchParams(location.search)
-  const url = searchParams.get('url')
-  return url
+  const urls = searchParams.getAll('url')
+  return urls
 }
 
-function getUrlFromHash(location: Location): string | null {
+function getUrlFromHash(location: Location): Array<string> | null {
   const hashQueryString = location.hash.slice(1)
 
   if (!hashQueryString) {
@@ -21,7 +21,7 @@ function getUrlFromHash(location: Location): string | null {
   if (data) {
     if (data.startsWith(dataUrlPrefix)) {
       const url = data.slice(dataUrlPrefix.length)
-      return url
+      return [url]
     }
   }
 
@@ -30,17 +30,17 @@ function getUrlFromHash(location: Location): string | null {
 
 export function fromUrl() {
   if (typeof window !== 'undefined') {
-    const queryStringUrl = getUrlFromQueryString(window.location)
+    const queryStringUrls = getUrlsFromQueryString(window.location)
     const hashUrl = getUrlFromHash(window.location)
 
-    if (queryStringUrl !== null && queryStringUrl.length) {
-      return queryStringUrl
+    if (queryStringUrls !== null && queryStringUrls.length) {
+      return queryStringUrls
     } else if (hashUrl !== null && hashUrl.length) {
       return hashUrl
     }
   }
 
-  return ''
+  return []
 }
 
-export default writable<string>(fromUrl())
+export default writable<Array<string>>(fromUrl())

@@ -22,6 +22,7 @@
     const newData = dataFromUrl()
 
     if (newUrl) {
+      console.log('after navigate', newUrl)
       $param = {
         type: 'url',
         url: newUrl
@@ -49,8 +50,10 @@
 
       if ($param.type === 'url' && $param.url) {
         const searchParams = $page.url.searchParams
-        searchParams.delete('data')
-        searchParams.set('url', $param.url)
+        if (searchParams.has('data')) {
+          searchParams.delete('data')
+        } else return
+        //searchParams.set('url', $param.url)
         gotoSearchParams(searchParams)
       } else if ($param.type === 'data' && $param.data) {
         if ($param.data.length > MAX_URL_PARAM_LENGTH) {

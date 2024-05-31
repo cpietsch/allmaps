@@ -129,6 +129,7 @@
     createImageInfoCache()
 
     paramStore.subscribe(async (value) => {
+      console.log('paramStore', value)
       resetRenderOptionsLayer()
       resetSources()
 
@@ -140,7 +141,10 @@
 
         try {
           if (value.type === 'url' && value.url) {
-            await addUrlSource(value.url)
+            console.log('url', value.url)
+            for (let url of value.url) {
+              await addUrlSource(url)
+            }
           } else if (value.data) {
             await addStringSource(value.data)
           }

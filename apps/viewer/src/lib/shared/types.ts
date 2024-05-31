@@ -19,18 +19,19 @@ export type Source = (UrlSourceOptions | StringSourceOptions) & {
   json: unknown
   parsed: ParsedSource
   // error?: Error
-  annotations: unknown[]
+  annotations: unknown[],
+  url?: string
 }
 
 export type ParsedSource =
   | {
-      type: 'annotation'
-      maps: Map[]
-    }
+    type: 'annotation'
+    maps: Map[]
+  }
   | {
-      type: 'iiif'
-      iiif: Image | Manifest | Collection
-    }
+    type: 'iiif'
+    iiif: Image | Manifest | Collection
+  }
 
 export type ViewerMap = {
   sourceId: string

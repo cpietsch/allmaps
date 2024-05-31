@@ -5,7 +5,7 @@ import data from './data.js'
 
 type UrlParam = {
   type: 'url'
-  url: string
+  url: Array<string>
 }
 
 type DataParam = {
@@ -17,7 +17,8 @@ type Param = UrlParam | DataParam
 
 export default {
   ...derived([url, data], ([$url, $data]) => {
-    if ($url) {
+    if ($url && $url.length > 0) {
+      console.log("derived", $url)
       return {
         type: 'url',
         url: $url
@@ -36,10 +37,10 @@ export default {
       url.set($param.url)
       data.set('')
     } else if ($param && $param.type === 'data') {
-      url.set('')
+      url.set([])
       data.set($param.data)
     } else {
-      url.set('')
+      url.set([])
       data.set('')
     }
   }
