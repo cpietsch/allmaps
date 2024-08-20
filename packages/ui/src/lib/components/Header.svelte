@@ -2,9 +2,8 @@
   import logo from '$lib/shared/images/allmaps-logo.svg'
 
   export let appName: string
-  export let transparent: boolean
+  export let transparent: boolean = false
 </script>
-
 
 {#if transparent}
   <header class="p-1 md:p-2 absolute">
@@ -12,7 +11,9 @@
       <a href="/" class="flex gap-2 no-underline">
         <!-- TODO: use Logo.svelte -->
         <img class="w-8 inline" alt="Allmaps logo" src={logo} />
-        <h1 class="self-center whitespace-nowrap text-xl font-medium inline text-shadow">
+        <h1
+          class="self-center whitespace-nowrap text-xl font-medium inline text-shadow"
+        >
           <span class="hidden sm:inline">Allmaps</span>
           <span class="font-light">{appName}</span>
         </h1>
@@ -60,6 +61,6 @@
 
 <style>
   .text-shadow {
-    text-shadow: 1px 1px 0px #FFF;
+    text-shadow: 1px 1px 0px #fff;
   }
 </style>

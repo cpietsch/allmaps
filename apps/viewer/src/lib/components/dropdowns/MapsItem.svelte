@@ -40,7 +40,7 @@
   import type { ViewerMap } from '$lib/shared/types.js'
 
   export let viewerMap: ViewerMap
-  export let isLastInList: boolean
+  export let isLastInList: boolean = false
 
   let container: HTMLElement
 
