@@ -141,9 +141,14 @@
 
         try {
           if (value.type === 'url' && value.url) {
-            console.log('url', value.url)
-            for (let url of value.url) {
-              await addUrlSource(url)
+            console.log('addUrlSource', value.url)
+            // value.url is an array
+            if (typeof value.url === 'string') {
+              await addUrlSource(value.url)
+            } else {
+              for (let url of value.url) {
+                await addUrlSource(url)
+              }
             }
           } else if (value.data) {
             await addStringSource(value.data)
