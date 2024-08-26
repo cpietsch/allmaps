@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inline-flex .ol-rotate.ol-hidden {
+  opacity: 1;
+  visibility: visible;
+}
+
+@layer base {
+  a,
+  button {
+    @apply focus-visible:outline-pink-500;
+  }
+}
